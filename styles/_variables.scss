@@ -1,0 +1,58 @@
+/*
+*FONTS
+*/
+
+//SIZE
+$font-size: (
+  html: 62.5%,
+  body: 1.6,
+  tittle-1: 4.8,
+  tittle-2: 3.6,
+);
+
+//WEIGHT
+$font-weight: (
+  bold: 700,
+  regular: 400,
+);
+
+// FAMILY
+$font-family: (
+  body: 'Lato', 
+  titles: 'Philosopher',
+);
+
+/*
+* COLORS
+*/
+
+$theme-colors: (
+  black: #0C0C0C,
+  gold: #D19E5C,
+  dark-grey: #1C1B16,
+  light-grey: #EAEAEA,
+  grey: #7F7F7F,
+  white: #FFFFFF,
+  brown: #704F36,
+);
+
+$gradient-color: (
+  dark: linear-gradient(to right, #0c0c0c, #131313, #191919, #1e1e1e, #242424),
+);
+
+/*
+*EXTENDS
+*/
+
+%titles {
+};
+
+%input-box {
+};
+
+/*
+*BREAKPOINTS
+*/
+
+$breakpoints: (
+);

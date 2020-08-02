@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-size: map-get($font-size , html )
+}
+
+body {
+  font-family: map-get($font-family, body);
+  font-size: map-get($font-size, body)#{rem};
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  color: map-get($theme-colors, gold);
+  text-decoration: none;
+}
