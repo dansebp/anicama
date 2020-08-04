@@ -11,6 +11,7 @@ body {
   font-size: map-get($font-size, body)#{rem};
 }
 h1, h2, h3 {
+  text-align: center;
   color: map-get($theme-colors, gold);
   font-family: map-get($font-family, titles);
 }
@@ -18,10 +19,24 @@ a {
   font-family: map-get($font-family, body);
   color: map-get($theme-colors, gold);
   text-decoration: none;
+
+  &:hover {
+    color: map-get($theme-colors, brown);
+    font-weight: map-get($font-weight, bold);
+  }
 }
-h1 {
+h1,h2 {
   font-size: map-get($font-size, tittle-1)#{rem};
+}
+h3 {
+  font-size: map-get($font-size, tittle-2)#{rem};
 }
 p{
   line-height: 2.2rem;
+}
+
+.responsive-img {
+  img {
+    width: 100%;
+  }
 }
