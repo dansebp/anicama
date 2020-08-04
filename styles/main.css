@@ -203,15 +203,31 @@ header .nav a:hover:after {
   }
 }
 
-.a-element {
-  background: url(../images/imgs/a-element.png);
+.a-element img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .main-home {
-  background: -webkit-gradient(linear, left top, right top, from(#0c0c0c), to(rgba(12, 12, 12, 0.9))), url(../images/imgs/home-bg.jpg);
-  background: linear-gradient(90deg, #0c0c0c 0%, rgba(12, 12, 12, 0.9) 100%), url(../images/imgs/home-bg.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(#0c0c0c), to(rgba(12, 12, 12, 0.9))), url(../images/imgs/home-bg.jpg) no-repeat;
+  background: linear-gradient(90deg, #0c0c0c 0%, rgba(12, 12, 12, 0.9) 100%), url(../images/imgs/home-bg.jpg) no-repeat;
   background-position: bottom right;
   background-size: cover;
+  padding-bottom: 10%;
+  position: relative;
+  z-index: 1;
+}
+
+.main-home section {
+  position: relative;
+  z-index: 2;
+}
+
+.main-home figure {
+  position: relative;
+  z-index: 2;
 }
 
 .main-home img {
@@ -221,5 +237,9 @@ header .nav a:hover:after {
 .anicama-main p {
   padding: 5% 30% 5% 0;
   color: #FFFFFF;
+}
+
+.anicama-main span {
+  color: #D19E5C;
 }
 /*# sourceMappingURL=main.css.map */
