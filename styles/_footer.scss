@@ -12,12 +12,22 @@
   }
 
   li{
-    padding: 5px 25px 0 0;
+    padding: 5px 15px 0 15px;
     display: inline-block;
   }
 
+  @include breakpoints(lg) {
+    &__content{
+      padding: 0;
+    }
+  }
+
   @include breakpoints(md) {
-    display: grid;
+    &__content{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      justify-content: center;
+    }
   }
 
 }

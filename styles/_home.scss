@@ -1,16 +1,8 @@
-.a-element {
-  img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-  }
-}
 .main-home {
   background: map-get($gradient-color, darkest), url(../images/imgs/home-bg.jpg) no-repeat;
   background-position: bottom right;
   background-size: cover;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
   position: relative;
   z-index: 1;
 
@@ -22,20 +14,81 @@
   figure {
     position: relative;
     z-index: 2;
-  }
-
-  img {
     padding-top: 10%;
+    padding-right: 20%;
   }
-}
 
-.anicama-main {
-  p{
-    padding: 5% 30% 5% 0;
-    color: map-get($theme-colors, white);
+  .anicama-main {
+    p{
+      padding: 5% 30% 5% 0;
+      color: map-get($theme-colors, white);
+    }
+    span {
+      color: map-get($theme-colors, gold);
+    }
   }
-  span {
-    color: map-get($theme-colors, gold);
+
+  .a-element {
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      padding-top: 0;
+      max-height: 90rem;
+    }
+  }
+
+  @include breakpoints(lg){
+    h1{
+      padding-right: 10%;
+    }
+    .a-element {
+      img{
+        max-height: 65rem;
+      padding-top: 8%;
+      }
+    }
+  }
+
+  @include breakpoints(md) {
+    padding-bottom: 0;
+
+    figure {
+    padding-right: 0;
+    }
+    .anicama-main {
+      p{
+        padding: 20px 20px 20px 0;
+      }
+    }
+
+    .a-element {
+      text-align: end;
+  
+      img{
+        max-height: 50rem;
+        position: relative;
+      }
+    }
+  }
+
+  @include breakpoints(sm) {
+    padding-bottom: 0;
+
+    .anicama-main {
+      p{
+        padding: 20px 20px 20px 0;
+      }
+    }
+
+    .a-element {
+      text-align: end;
+      img{
+        max-height: 40rem;
+        position: relative;
+      }
+    }
   }
 
 }

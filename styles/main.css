@@ -173,6 +173,15 @@ header .nav a:hover:after {
   display: block;
 }
 
+@media (max-width: 576px) {
+  header .brand-logo {
+    padding: 0 0 0 20px;
+  }
+  header .hamburger-menu img {
+    padding: 0 20px 0 0;
+  }
+}
+
 .active {
   font-weight: 700;
 }
@@ -192,22 +201,26 @@ header .nav a:hover:after {
 }
 
 .footer li {
-  padding: 5px 25px 0 0;
+  padding: 5px 15px 0 15px;
   display: inline-block;
 }
 
-@media (max-width: 768px) {
-  .footer {
-    display: -ms-grid;
-    display: grid;
+@media (max-width: 992px) {
+  .footer__content {
+    padding: 0;
   }
 }
 
-.a-element img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+@media (max-width: 768px) {
+  .footer__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main-home {
@@ -215,7 +228,7 @@ header .nav a:hover:after {
   background: linear-gradient(90deg, #0c0c0c 0%, rgba(12, 12, 12, 0.9) 100%), url(../images/imgs/home-bg.jpg) no-repeat;
   background-position: bottom right;
   background-size: cover;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
   position: relative;
   z-index: 1;
 }
@@ -228,18 +241,70 @@ header .nav a:hover:after {
 .main-home figure {
   position: relative;
   z-index: 2;
-}
-
-.main-home img {
   padding-top: 10%;
+  padding-right: 20%;
 }
 
-.anicama-main p {
+.main-home .anicama-main p {
   padding: 5% 30% 5% 0;
   color: #FFFFFF;
 }
 
-.anicama-main span {
+.main-home .anicama-main span {
   color: #D19E5C;
+}
+
+.main-home .a-element img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  padding-top: 0;
+  max-height: 90rem;
+}
+
+@media (max-width: 992px) {
+  .main-home h1 {
+    padding-right: 10%;
+  }
+  .main-home .a-element img {
+    max-height: 65rem;
+    padding-top: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-home {
+    padding-bottom: 0;
+  }
+  .main-home figure {
+    padding-right: 0;
+  }
+  .main-home .anicama-main p {
+    padding: 20px 20px 20px 0;
+  }
+  .main-home .a-element {
+    text-align: end;
+  }
+  .main-home .a-element img {
+    max-height: 50rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-home {
+    padding-bottom: 0;
+  }
+  .main-home .anicama-main p {
+    padding: 20px 20px 20px 0;
+  }
+  .main-home .a-element {
+    text-align: end;
+  }
+  .main-home .a-element img {
+    max-height: 40rem;
+    position: relative;
+  }
 }
 /*# sourceMappingURL=main.css.map */

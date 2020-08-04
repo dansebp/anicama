@@ -26,6 +26,19 @@ header {
       display: block;
     }
   }
+
+  @include breakpoints(sm){
+    .brand-logo {
+      padding: 0 0 0 20px;
+    }
+
+    .hamburger-menu {
+      img {
+        padding: 0 20px 0 0;
+      }
+    }
+
+  }
 }
 .active {
   font-weight: map-get($font-weight, bold);
