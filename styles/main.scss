@@ -2,5 +2,8 @@
 @import 'reset';
 @import 'globals';
 @import './helpers/displays';
+@import './mixins/breakpoints';
 @import 'layout';
 @import 'header';
+@import 'footer';
+@import 'home';

@@ -36,23 +36,31 @@ $theme-colors: (
   brown: #704F36,
 );
 
+%focused {
+  content: '';
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background-color: #d19e5c;
+  top: 78px;
+  margin: 0 0 0 -50px;
+};
+
 $gradient-color: (
-  dark: linear-gradient(to right, #0c0c0c, #131313, #191919, #1e1e1e, #242424),
+  darkest: linear-gradient(90deg, rgba(12,12,12,1) 0%, rgba(12,12,12,0.9) 100%),
 );
 
 /*
 *EXTENDS
 */
 
-%titles {
-};
-
-%input-box {
-};
-
 /*
 *BREAKPOINTS
 */
-
 $breakpoints: (
+    xl: 1200px,
+    lg: 992px,
+    md: 768px,
+    sm: 576px,
+    xs: 480px,
 );

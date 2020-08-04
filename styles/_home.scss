@@ -1,0 +1,19 @@
+.a-element {
+  background: url(../images/imgs/a-element.png);
+}
+.main-home {
+  background: map-get($gradient-color, darkest), url(../images/imgs/home-bg.jpg);
+  background-position: bottom right;
+  background-size: cover;
+  img {
+    padding-top: 10%;
+  }
+}
+
+.anicama-main {
+  p{
+    padding: 5% 30% 5% 0;
+    color: map-get($theme-colors, white);
+  }
+
+}

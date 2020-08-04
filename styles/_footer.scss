@@ -1,0 +1,23 @@
+.footer {
+  background-color: map-get($theme-colors, black);
+  padding: 15px 0;
+  color: map-get($theme-colors, gold);
+
+  &__content{
+    padding: 0 10%;
+  }
+  
+  p{
+    padding: 15px 0;
+  }
+
+  li{
+    padding: 5px 25px 0 0;
+    display: inline-block;
+  }
+
+  @include breakpoints(md) {
+    display: grid;
+  }
+
+}

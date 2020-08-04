@@ -10,9 +10,18 @@ body {
   font-family: map-get($font-family, body);
   font-size: map-get($font-size, body)#{rem};
 }
-
+h1, h2, h3 {
+  color: map-get($theme-colors, gold);
+  font-family: map-get($font-family, titles);
+}
 a {
-  font-family: 'Lato', sans-serif;
+  font-family: map-get($font-family, body);
   color: map-get($theme-colors, gold);
   text-decoration: none;
+}
+h1 {
+  font-size: map-get($font-size, tittle-1)#{rem};
+}
+p{
+  line-height: 2.2rem;
 }
