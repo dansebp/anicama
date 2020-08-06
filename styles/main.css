@@ -760,7 +760,54 @@ header .nav a:hover:after {
   }
 }
 
-.contacto-form input {
+.contacto-form img {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
   height: 50px;
+  color: #7F7F7F;
+  font-size: 1.6rem;
+}
+
+.contacto-form textarea {
+  min-height: 100px;
+  padding-top: 20px;
+}
+
+.contacto-form .textarea {
+  margin: 10px 0;
+}
+
+.contacto-form .form-row {
+  margin: 20px;
+}
+
+.contacto-form .btn {
+  width: 100%;
+  height: 50px;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  color: white;
+  max-width: 420px;
+  margin: 25px 0;
+  background-color: #D19E5C;
+}
+
+.contacto-form .form-control {
+  max-width: 420px;
+  border: none;
+  border-radius: 5px;
+  background: #EAEAEA;
+  padding-left: 20px;
+}
+
+.contacto-form .form-control:focus {
+  border: 2px solid #D19E5C;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=main.css.map */
