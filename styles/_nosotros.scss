@@ -1,6 +1,7 @@
 .nosotros-main {
   .nosotros {
-    padding: 10% 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 
   p{
@@ -33,11 +34,12 @@
   }
 }
 
-.nosotros-overview{
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
+.nosotros-overview {
   text-align: center;
+
+  &__item {
+    padding: 3%;
+  }
 
   h3{
     padding: 10%;
@@ -57,14 +59,15 @@
     width: 100%;
   }
 
-  @include breakpoints(md) {
+  @include breakpoints(md){
     h3{
-      font-size: map-get($font-size, tittle-3)#rem;
-    } 
+      font-size: map-get($font-size, tittle-3)#{rem};
+    }
   }
 }
+
 .brand-attributes {
-  padding: 5% 0 10% 0;
+  padding: 0 0 10% 0;
   text-align: center;
 
   &__item {

@@ -327,7 +327,8 @@ header .nav a:hover:after {
 }
 
 .nosotros-main .nosotros {
-  padding: 10% 0;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .nosotros-main p {
@@ -365,12 +366,11 @@ header .nav a:hover:after {
 }
 
 .nosotros-overview {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
   text-align: center;
+}
+
+.nosotros-overview__item {
+  padding: 3%;
 }
 
 .nosotros-overview h3 {
@@ -393,12 +393,12 @@ header .nav a:hover:after {
 
 @media (max-width: 768px) {
   .nosotros-overview h3 {
-    font-size: 3 #rem;
+    font-size: 3rem;
   }
 }
 
 .brand-attributes {
-  padding: 5% 0 10% 0;
+  padding: 0 0 10% 0;
   text-align: center;
 }
 
@@ -412,5 +412,355 @@ header .nav a:hover:after {
 
 .brand-attributes p {
   padding: 15% 0;
+}
+
+.servicios-main .servicios {
+  padding: 10% 0;
+}
+
+.servicios-main figure {
+  text-align: center;
+}
+
+.servicios-main p {
+  text-align: center;
+  padding: 5% 0 10% 0;
+}
+
+.servicios-main__banner-top {
+  background: url(../images/imgs/header-servicios.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.servicios-main__banner-top img {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+@media (max-width: 768px) {
+  .servicios-main__banner-top {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .servicios-main__banner-top {
+    max-height: 150px;
+  }
+  .servicios-main__banner-top img {
+    display: none;
+  }
+}
+
+.servicios-content {
+  padding: 10%;
+}
+
+.servicios-content .servicios-item {
+  padding: 30px 5%;
+}
+
+.servicios-content .servicios-item__top {
+  padding: 5%;
+}
+
+.servicios-content p {
+  padding: 0 5%;
+  text-align: left;
+}
+
+.servicios-content h3 {
+  text-align: left;
+  padding: 0 0 0 20px;
+}
+
+@media (max-width: 992px) {
+  .servicios-content {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicios-content {
+    padding: 5%;
+  }
+  .servicios-content .servicios-item {
+    padding: 30px 0;
+  }
+}
+
+.partners-main .partners {
+  padding: 10% 20px;
+}
+
+.partners-main figure {
+  text-align: center;
+}
+
+.partners-main p {
+  text-align: center;
+  padding: 5% 0 5% 0;
+}
+
+.partners-main__banner-top {
+  background: url(../images/imgs/header-partners.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.partners-main__banner-top img {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+@media (max-width: 768px) {
+  .partners-main__banner-top {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .partners-main__banner-top {
+    max-height: 150px;
+  }
+  .partners-main__banner-top img {
+    display: none;
+  }
+}
+
+.sap-partner {
+  padding: 5% 20px;
+}
+
+.sap-partner img {
+  max-height: 117px;
+}
+
+.sap-partner figure {
+  padding-bottom: 50px;
+}
+
+.sap-partner figure:nth-child(1) {
+  padding-left: 15%;
+  padding-right: 5%;
+}
+
+.sap-partner figure:nth-child(2) {
+  padding-left: 5%;
+  padding-right: 15%;
+}
+
+@media (max-width: 768px) {
+  .sap-partner figure:nth-child(1) {
+    padding-left: 0;
+    padding: 0 10px;
+  }
+  .sap-partner figure:nth-child(2) {
+    padding-right: 0;
+    padding: 0 10px;
+  }
+  .sap-partner img {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sap-partner figure {
+    padding-bottom: 30px;
+  }
+  .sap-partner img {
+    max-height: 50px;
+  }
+}
+
+.partners p {
+  padding: 20px;
+}
+
+.partners .partners-strategy img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.partners .partners-strategy__item {
+  margin: 25px 0;
+  padding: 0 25px;
+}
+
+.clientes-main .clientes {
+  padding: 10% 0;
+}
+
+.clientes-main figure {
+  text-align: center;
+}
+
+.clientes-main p {
+  text-align: center;
+  padding: 5% 0 10% 0;
+}
+
+.clientes-main__banner-top {
+  background: url(../images/imgs/header-clientes.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.clientes-main__banner-top img {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+@media (max-width: 768px) {
+  .clientes-main__banner-top {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .clientes-main__banner-top {
+    max-height: 150px;
+  }
+  .clientes-main__banner-top img {
+    display: none;
+  }
+}
+
+.clientes-logos img {
+  max-height: 120px;
+}
+
+@media (max-width: 768px) {
+  .clientes-logos img {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .clientes-logos img {
+    max-height: 70px;
+  }
+}
+
+.contacto-main .contacto {
+  padding: 10% 0;
+}
+
+.contacto-main figure {
+  text-align: center;
+}
+
+.contacto-main p {
+  text-align: center;
+  padding: 5% 0 10% 0;
+}
+
+.contacto-main__banner-top {
+  background: url(../images/imgs/header-contacto.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.contacto-main__banner-top img {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+@media (max-width: 768px) {
+  .contacto-main__banner-top {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contacto-main__banner-top {
+    max-height: 150px;
+  }
+  .contacto-main__banner-top img {
+    display: none;
+  }
+}
+
+.contacto-info {
+  padding: 5% 0;
+}
+
+.contacto-info h2 {
+  padding: 5% 0;
+}
+
+.contacto-info_item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto-info_item p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #7F7F7F;
+  padding-bottom: 5px;
+}
+
+.contacto-info_item span {
+  font-size: 1.4rem;
+  color: #7F7F7F;
+}
+
+.contacto-info_item img {
+  width: 50px;
+}
+
+.contacto-info_item .contact-item-txt {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .contacto-info_item .contact-item-txt {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto-info_item p {
+    font-size: 1.4rem;
+  }
+  .contacto-info_item span {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contacto-info_item {
+    margin: 0 auto;
+    width: 300px;
+    padding: 35px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .contacto-info_item p {
+    font-size: 1.2rem;
+  }
+  .contacto-info_item span {
+    font-size: 1.2rem;
+  }
+}
+
+.contacto-form input {
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

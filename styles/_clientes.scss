@@ -1,0 +1,56 @@
+.clientes-main {
+  .clientes {
+    padding: 10% 0;
+  }
+  figure {
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+    padding: 5% 0 10% 0;
+  }
+
+  &__banner-top{
+    background: url(../images/imgs/header-clientes.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+  
+    img {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+    }
+    @include breakpoints(md){
+      max-height: 250px;
+    } 
+    @include breakpoints(sm){
+      max-height: 150px;
+
+      img {
+       display: none;
+      }
+    }
+  }
+}
+
+.clientes-logos {
+
+  img {
+    max-height: 120px;
+  }
+
+  @include breakpoints(md){
+    img{
+      max-height: 100px;
+    }
+  }
+
+  @include breakpoints(sm){
+    img{
+      max-height: 70px;
+    }
+  }
+}

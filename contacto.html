@@ -6,7 +6,7 @@
     <title>Anicama:Consulting</title>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Philosopher:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
@@ -35,57 +35,97 @@
   </header>
 
   <main>
-    <div class="partners-main__banner-top">
+    <div class="contacto-main__banner-top">
       <figure>
         <img src="./images/Icons & Logos/pattern.svg" alt="patron-anicama">
       </figure>
     </div>
 
-    <section class="contacto-info">
+    <section class="contacto-info container">
       <h2>Contact</h2>
-      <div class="contacto-info-item">
-        <figure><img src="./images/Icons & Logos/location.svg" alt=""></figure>
-        <div class="contacto-info-item__txt">
-          <h3>DIRECCIÓN</h3>
-          <span>Av:Ayacucho Nº1331, Urb La Ligadura - Surco, Lima Perú</span>
-        </div>
-      </div>
+      <div class="contact-info-content row d-fex align-items-center">
 
-      <div class="contacto-info-item">
-        <figure><img src="./images/Icons & Logos/location.svg" alt=""></figure>
-        <div class="contacto-info-item__txt">
-          <h3>DIRECCIÓN</h3>
-          <span>Av:Ayacucho Nº1331, Urb La Ligadura - Surco, Lima Perú</span>
+        <div class="contacto-info_item d-flex align-items-center col-sm">
+          <figure><img src="./images/icons-logos/location.svg" alt=""></figure>
+          <div class="contact-item-txt">
+            <p>DIRECCIÓN</p>
+            <span>Av:Ayacucho Nº1331,<br>Urb La Ligadura - Surco, Lima Perú</span>
+          </div>
         </div>
-      </div>
-
-      <div class="contacto-info-item">
-        <figure><img src="./images/Icons & Logos/location.svg" alt=""></figure>
-        <div class="contacto-info-item__txt">
-          <h3>DIRECCIÓN</h3>
-          <span>Av:Ayacucho Nº1331, Urb La Ligadura - Surco, Lima Perú</span>
+  
+        <div class="contacto-info_item d-flex align-items-center col-sm">
+          <figure><img src="./images/icons-logos/phone.svg" alt=""></figure>
+          <div class="contact-item-txt">
+            <p>TELÉFONO</p>
+            <span>(511) 320-2632</span>
+          </div>
+        </div>
+  
+        <div class="contacto-info_item d-flex align-items-center col-sm">
+          <figure><img src="./images/icons-logos/mail.svg" alt=""></figure>
+          <div class="contact-item-txt">
+            <p>CORREO</p>
+            <span>carlos.anicama@anicama.pe</span>
+          </div>
         </div>
       </div>
     </section>
     
-    <section class="contacto-form">
-
+    <section class="contacto-form container">
       <form>
-        <fieldset>
-          <input class="input-txt sw-right" minlength="10" type="text" placeholder="RUC" required>
-          <input class="input-txt sw-right" minlength="7" type="text" placeholder="Telefono" required>
-        </fieldset>
-        <fieldset>
+        <div class="form-row">
+          <div class="col">
+            <input class="form-control" type="text" name="name" id="name" placeholder="Nombre y Apellidos" required="" pattern="[A-Za-z]+">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" minlength="5" type="text" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" minlength="7" type="text" placeholder="Teléfono" required>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="RUC">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <textarea class="form-control" name="message" id="message-txt" placeholder="Mensaje"></textarea>
+            <button class="btn" type="submit">Submit form</button>
+          </div>
+          <div class="col">
+            <img src="./images/imgs/img7-contact.png" alt="imagen de contacto">
+          </div>
+        </div>
+      </form>
+
+      <!--
+<form>
+        <fieldset class="row">
+          <div class="col-6 col-sm">
             <input class="input-txt sw-left" type="text" name="name" id="name" placeholder="Nombre y Apellidos" required="" pattern="[A-Za-z]+">
             <input class="input-txt sw-left" minlength="5" type="text" placeholder="Email" required="">
+          </div>
+          <div class="col-6 col-sm">
+            <input class="input-txt sw-right" minlength="10" type="text" placeholder="RUC" required>
+            <input class="input-txt sw-right" minlength="7" type="text" placeholder="Telefono" required>
+          </div>
+        </fieldset>
+        <fieldset class="row">
+          <div class="col-6 col-sm">
             <input class="input-txt sw-left" type="text" name="subject" id="subject" placeholder="Asunto" required="" pattern="[A-Za-z]+">
             <textarea class="msg-txt" name="message" id="message-txt" placeholder="Mensaje"></textarea>
             <div class="btn-wrap">
             <button>Enviar</button>
             </div>
+          </div>
+          <div class="col-6 col-sm">
+            <img src="./images/imgs/img7-contact.png" alt="imagen de contacto">
+          </div>
         </fieldset>
       </form>
-
+      -->
     </section>
     
   </main>
