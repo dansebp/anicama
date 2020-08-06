@@ -131,6 +131,10 @@
     max-width: 420px;
     margin: 25px 0;
     background-color: map-get($theme-colors, gold);
+
+    &:hover {
+    background-color: map-get($theme-colors, brown);
+    }
   }
 
   .form-control {
@@ -139,10 +143,15 @@
     border-radius: 5px;
     background: map-get($theme-colors, light-grey);
     padding-left: 20px;
+    margin: 0 auto;
 
     &:focus{
       border: 2px solid map-get($theme-colors, gold);
       box-shadow: none;
     }
   }
+}
+
+.btn-submit {
+  text-align: center;
 }

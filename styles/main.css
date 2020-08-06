@@ -797,17 +797,26 @@ header .nav a:hover:after {
   background-color: #D19E5C;
 }
 
+.contacto-form .btn:hover {
+  background-color: #704F36;
+}
+
 .contacto-form .form-control {
   max-width: 420px;
   border: none;
   border-radius: 5px;
   background: #EAEAEA;
   padding-left: 20px;
+  margin: 0 auto;
 }
 
 .contacto-form .form-control:focus {
   border: 2px solid #D19E5C;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.btn-submit {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
